@@ -1,6 +1,11 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Inter&family=League+Gothic&family=Montserrat:wght@400;500&family=Oswald&family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap");
 /* common styles */
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
@@ -16,7 +21,38 @@ main {
   padding: 30px;
   margin-top: 21px;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
+/* ---------------
+        Header Section
+             --------------- */
+/* Navbar */
+
+nav {
+  display: flex;
+  width: 1440px;
+  height: 94px;
+  background-color: #562eff;
+}
+.icon {
+  width: 40px;
+  height: 51px;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  line-height: 35px;
+}
+.nav-links li {
+  float: left;
+}
+.nav-links li a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
 /* top plyers style */
 .top-players {
   margin-bottom: 30px;
@@ -81,17 +117,43 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
 }
+.course {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
 .course-banner img {
   width: 224px;
   height: 104px;
+  margin-top: 13px;
+  margin-left: 11px;
+  margin-right: 18px;
+  margin-bottom: 19px;
 }
 .course-title {
   font-size: 20px;
+  margin-left: 12px;
+}
+.course-author {
+  color: #ed6b4f;
+  margin-left: 13px;
 }
 .course-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 13px;
+}
+.course-info p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.6913px;
+  line-height: 22px;
+  color: #a2a2a2;
+  margin-left: 10px;
+  margin-right: 25px;
 }
 .fa-star {
   font-size: 12px;
@@ -103,16 +165,36 @@ hr {
   color: #aeaeae;
 }
 .course-duration {
+  height: 30px;
+  width: 95px;
   border: 1px solid #ffe4e8;
-  border-radius: 14px;
+  border-radius: 14.6913px;
   background-color: #ffe4e8;
+  margin-right: 12px;
+}
+.course-duration-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fa-clock {
+  color: #ff4a60;
+  margin-right: 5.42px;
+  font-size: 14.6913px;
+  font-weight: 600;
+  margin: 4px 5.42px 5.34px 5.34px;
+}
+.course-duration-text {
   font-family: "Open Sans";
+
   font-weight: 600;
   font-size: 14.6913px;
   line-height: 20px;
   color: #ff4a60;
+  margin-left: 5.42px;
+}
+#uncommon {
+  background-color: #fee5df;
 }
 /*--------------------
       Media Queries 
